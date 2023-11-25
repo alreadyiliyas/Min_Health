@@ -30,6 +30,7 @@ namespace MinHealth.DAL
 				}
 				using (StreamWriter sw = File.AppendText(filePath))
 				{
+					//1 Время, 2 откуда, 3 сообщение
 					sw.WriteLine("-> {0}: {1} | {2}",
 						DateTime.Now,
 						e.Source,

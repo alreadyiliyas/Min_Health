@@ -27,8 +27,9 @@ namespace MinHealth.DAL
 				}
 
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				ServiceError.WriteLog(e);
 				return false;
 			}
 		}
@@ -44,8 +45,9 @@ namespace MinHealth.DAL
 					return true;
 				}
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				ServiceError.WriteLog(e);
 				return false;
 			}
 		}
@@ -60,8 +62,9 @@ namespace MinHealth.DAL
 				}
 
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				ServiceError.WriteLog(e);
 				return null;
 			}
 		}
@@ -75,8 +78,9 @@ namespace MinHealth.DAL
 					return col.FindAll().ToList();
 				}
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				ServiceError.WriteLog(e);
 				return null;
 			}
 		}
@@ -92,8 +96,9 @@ namespace MinHealth.DAL
 					return true;
 				}
 			}
-			catch (Exception)
+			catch (Exception e)
 			{
+				ServiceError.WriteLog(e);
 				return false;
 			}
 		}
