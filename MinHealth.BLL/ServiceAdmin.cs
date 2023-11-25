@@ -10,7 +10,7 @@ namespace MinHealth.BLL
 {
 	public class ServiceAdmin
 	{
-		private string path = "";
+		private string path = @"C:\\Users\\User\\source\\repos\\Ex2\\MinHealth.DAL\\ConsoleApp.MinHealth\\bin\\Debug\\test.db";
 		//1. Создание орг
 		public string AddOrg(Orginization orginization)
 		{

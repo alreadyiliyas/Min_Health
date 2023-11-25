@@ -34,8 +34,8 @@ namespace MinHealth.DAL
 					//1 Время, 2 откуда, 3 сообщение
 					sw.WriteLine("-> {0}: {1} | {2}",
 						DateTime.Now,
-						e.TargetSite,
-						e.Message);
+						e.Message,
+						e.StackTrace);
 				}
 			}
 		}

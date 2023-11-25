@@ -45,6 +45,13 @@ namespace ConsoleApp.MinHealth
 						string res = serviceAdmin.AddOrg(orginization);
 						Console.WriteLine(res);
 					}
+					else if (choise == 2)
+					{
+						ServiceAdmin serviceAdmin = new ServiceAdmin();
+						Employee employee = new Employee();
+
+						serviceAdmin.AddEmployee(employee);
+					}
 
 
 				}
