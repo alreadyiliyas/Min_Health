@@ -26,14 +26,15 @@ namespace MinHealth.DAL
 				FileInfo file = new FileInfo(filePath);
 				if (!file.Exists)
 				{
-					file.Create();
+					FileStream fs = file.Create();
+					fs.Close();
 				}
 				using (StreamWriter sw = File.AppendText(filePath))
 				{
 					//1 Время, 2 откуда, 3 сообщение
 					sw.WriteLine("-> {0}: {1} | {2}",
 						DateTime.Now,
-						e.Source,
+						e.TargetSite,
 						e.Message);
 				}
 			}

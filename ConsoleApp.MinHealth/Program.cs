@@ -30,7 +30,7 @@ namespace ConsoleApp.MinHealth
 					Console.WriteLine("2: Create employee ");
 
 					choise = Convert.ToInt32(Console.ReadLine());
-					if(choise == 1 )
+					if(choise == 1)
 					{
 						ServiceAdmin serviceAdmin = new ServiceAdmin();
 						Orginization orginization = new Orginization();
