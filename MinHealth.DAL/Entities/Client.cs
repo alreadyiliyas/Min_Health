@@ -14,5 +14,6 @@ namespace MinHealth.DAL.Entities
 		public int Sex { get; set; }
 		public string Address { get; set; }	
 		public DateTime DateofBirthDay { get; set; }
+		
 	}
 }

@@ -45,6 +45,7 @@
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Orginization.cs" />
+    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

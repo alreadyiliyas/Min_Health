@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MinHealth.DAL.Entities
 {
-	public class Employee : User
+	public class Role
 	{
-		public string Position { get; set; }
-		public Role Role { get; set; }
-		public int RoleId { get; set; }
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public List<Employee> Employees { get; set; }	
 	}
 }

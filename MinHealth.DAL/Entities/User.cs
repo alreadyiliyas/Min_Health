@@ -15,5 +15,7 @@ namespace MinHealth.DAL.Entities
 		public string Email { get; set; }
 		public string Password { get; set; }
 		public DateTime CreationDate { get; set; }
+		public int OrgId { get; set; }
+		public Orginization Orginization { get; set; }
 	}
 }
